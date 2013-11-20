@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BloodPressureValue" representedClassName="BloodPressureValue" syncable="YES">
+        <attribute name="diastolic" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="is_recorded" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="systolic" optional="YES" attributeType="Float" syncable="YES"/>
+        <relationship name="record" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Record" syncable="YES"/>
+    </entity>
+    <entity name="GlucoseValue" representedClassName="GlucoseValue" syncable="YES">
+        <attribute name="carb_count" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="is_recorded" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_glucose" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="pre_glucose" optional="YES" attributeType="Float" syncable="YES"/>
+        <relationship name="record" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Record" syncable="YES"/>
+    </entity>
+    <entity name="Record" representedClassName="Record" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="is_complete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="bsam" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="BloodPressureValue" syncable="YES"/>
+        <relationship name="bspm" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="BloodPressureValue" syncable="YES"/>
+        <relationship name="gcbreak" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="GlucoseValue" syncable="YES"/>
+        <relationship name="gcdinner" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="GlucoseValue" syncable="YES"/>
+        <relationship name="gclunch" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="GlucoseValue" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BloodPressureValue" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GlucoseValue" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Record" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

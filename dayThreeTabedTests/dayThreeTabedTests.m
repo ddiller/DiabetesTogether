@@ -14,10 +14,11 @@
 
 @implementation dayThreeTabedTests
 
+
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    // Put setup code here; it will be run once, before the first test case.
 }
 
 - (void)tearDown
@@ -28,7 +29,9 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
+
+
 
 @end
