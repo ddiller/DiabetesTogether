@@ -41,7 +41,10 @@ const int SPENTLEVELTHREE = 500;
     [_points removePoints:SPENTLEVELTWO];}
 -(void)removePointsThree{
     [_points removePoints:SPENTLEVELTHREE];}
-
+-(void)addPointsAmount:(NSInteger)amount{
+    [_points addPoints:amount];
+    
+}
 -(int)getPoints{
     return [_points score];
 }

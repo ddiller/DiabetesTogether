@@ -6,9 +6,12 @@
 //  Copyright (c) 2013 App Jam. All rights reserved.
 //
 #import "StepsViewController.h"
+#import "PointManager.h"
 
 #define kUpdateFrequency    60.0
-
+@interface StepsViewController()
+@property (strong, nonatomic) PointManager *myPoints;
+@end
 @implementation StepsViewController
 @synthesize stepCountLabel;
 
@@ -31,6 +34,7 @@
     numSteps = 0;
     
     self.stepCountLabel.text = [NSString stringWithFormat:@"%d", numSteps];
+    self.myPoints = [[PointManager alloc] init];
     
 }
 
@@ -112,8 +116,13 @@
 }
 
 - (IBAction)reset:(id)sender {
+    if(numSteps > 100){
+        [self.myPoints addPointsAmount:(int)(numSteps / 100)];
+        [self showAlert:@"Well Done" withMessage:[NSString stringWithFormat: @"You just earned %d %@", numSteps/100, @" points!"] ];
+    }
     numSteps = 0;
     self.stepCountLabel.text = [NSString stringWithFormat:@"%d", numSteps];
+    
 }
 -(void)showAlert:(NSString*)title withMessage:(NSString*)message
 {
