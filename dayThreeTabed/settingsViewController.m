@@ -35,6 +35,9 @@
     self.myPoints = [[PointManager alloc] init];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)backClick:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 - (void)didReceiveMemoryWarning
