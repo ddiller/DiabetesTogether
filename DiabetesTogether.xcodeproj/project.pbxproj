@@ -40,6 +40,11 @@
 		41306165183D541200FEE9CD /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41306164183D541200FEE9CD /* libiconv.dylib */; };
 		4130616A183D54B500FEE9CD /* VideoFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 41306167183D54B500FEE9CD /* VideoFiles.m */; };
 		4130616B183D54B500FEE9CD /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41306169183D54B500FEE9CD /* VideoViewController.m */; };
+		4130616E183D89E800FEE9CD /* platinum-badges-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 4130616D183D89E800FEE9CD /* platinum-badges-transparent.png */; };
+		41306170183D89F700FEE9CD /* titanium-badges-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 4130616F183D89F700FEE9CD /* titanium-badges-transparent.png */; };
+		41306173183D923500FEE9CD /* left-arrow-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306171183D923500FEE9CD /* left-arrow-transparent.png */; };
+		41306174183D923500FEE9CD /* right-arrow-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306172183D923500FEE9CD /* right-arrow-transparent.png */; };
+		41306176183D935E00FEE9CD /* Med-AppJam-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306175183D935E00FEE9CD /* Med-AppJam-Logo.png */; };
 		413BEA3D1839B7BF0008AB6D /* StepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413BEA3C1839B7BF0008AB6D /* StepsViewController.m */; };
 		414019021833134900A78834 /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414019011833134900A78834 /* settingsViewController.m */; };
 		414AC1CB1832C6D100E566C1 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414AC1CA1832C6D100E566C1 /* QuizViewController.m */; };
@@ -173,6 +178,11 @@
 		41306167183D54B500FEE9CD /* VideoFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFiles.m; sourceTree = "<group>"; };
 		41306168183D54B500FEE9CD /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		41306169183D54B500FEE9CD /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		4130616D183D89E800FEE9CD /* platinum-badges-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "platinum-badges-transparent.png"; sourceTree = "<group>"; };
+		4130616F183D89F700FEE9CD /* titanium-badges-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titanium-badges-transparent.png"; sourceTree = "<group>"; };
+		41306171183D923500FEE9CD /* left-arrow-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow-transparent.png"; sourceTree = "<group>"; };
+		41306172183D923500FEE9CD /* right-arrow-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow-transparent.png"; sourceTree = "<group>"; };
+		41306175183D935E00FEE9CD /* Med-AppJam-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Med-AppJam-Logo.png"; sourceTree = "<group>"; };
 		413BEA3B1839B7BF0008AB6D /* StepsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepsViewController.h; sourceTree = "<group>"; };
 		413BEA3C1839B7BF0008AB6D /* StepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepsViewController.m; sourceTree = "<group>"; };
 		414019001833134900A78834 /* settingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsViewController.h; sourceTree = "<group>"; };
@@ -346,6 +356,11 @@
 		4127FB1918303C2400704C33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41306175183D935E00FEE9CD /* Med-AppJam-Logo.png */,
+				41306171183D923500FEE9CD /* left-arrow-transparent.png */,
+				41306172183D923500FEE9CD /* right-arrow-transparent.png */,
+				4130616F183D89F700FEE9CD /* titanium-badges-transparent.png */,
+				4130616D183D89E800FEE9CD /* platinum-badges-transparent.png */,
 				4127FB1A18303C2400704C33 /* DiabetesTogether-Info.plist */,
 				4127FB1E18303C2400704C33 /* main.m */,
 				4127FB2018303C2400704C33 /* DiabetesTogether-Prefix.pch */,
@@ -585,12 +600,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41306176183D935E00FEE9CD /* Med-AppJam-Logo.png in Resources */,
 				41306118183D517E00FEE9CD /* diabetes-travel-tips-508.mp4 in Resources */,
 				41306158183D53B900FEE9CD /* zbar-back.png in Resources */,
+				41306170183D89F700FEE9CD /* titanium-badges-transparent.png in Resources */,
+				41306173183D923500FEE9CD /* left-arrow-transparent.png in Resources */,
 				4130615A183D53B900FEE9CD /* zbar-helpicons.png in Resources */,
 				4130611A183D517E00FEE9CD /* healthy-eating-diabetes-508.mp4 in Resources */,
 				4127FB2918303C2400704C33 /* Main_iPad.storyboard in Resources */,
 				4127FB3118303C2400704C33 /* Images.xcassets in Resources */,
+				41306174183D923500FEE9CD /* right-arrow-transparent.png in Resources */,
+				4130616E183D89E800FEE9CD /* platinum-badges-transparent.png in Resources */,
 				41306119183D517E00FEE9CD /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */,
 				41306159183D53B900FEE9CD /* zbar-help.html in Resources */,
 				4130615B183D53B900FEE9CD /* zbar-samples.png in Resources */,
