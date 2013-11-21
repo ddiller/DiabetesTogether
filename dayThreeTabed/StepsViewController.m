@@ -107,10 +107,18 @@
     [[UIAccelerometer sharedAccelerometer] setDelegate:nil];
     [super dismissViewControllerAnimated:YES completion:nil];
 }
+- (IBAction)clickLight:(id)sender {
+    [self showAlert:@"Exercise" withMessage:@"Time to exercise!  Earn points by walking or jogging and using this pedometer function.  To get points, simply click on the “start” button and just start walking or jogging.  Once you are done with your exercise, click on the “stop” button to collect the points you just earned.  You will earn 10 points for every 2000 steps (that’s 1 mile!) you record on this pedometer."];
+}
 
 - (IBAction)reset:(id)sender {
     numSteps = 0;
     self.stepCountLabel.text = [NSString stringWithFormat:@"%d", numSteps];
+}
+-(void)showAlert:(NSString*)title withMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end

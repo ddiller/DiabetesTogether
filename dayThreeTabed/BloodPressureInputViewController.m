@@ -38,6 +38,11 @@
     }
     return self;
 }
+-(void)showAlert:(NSString*)title withMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,6 +71,9 @@
 - (IBAction)backButton:(id)sender {
     [self updateBloodPressureValues];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)clickLight:(id)sender {
+    [self showAlert:@"Blood Pressure Log" withMessage:@"Record your daily blood pressures here.  Type in your morning blood pressure into the “AM” text boxes and your afternoon blood pressures into the “PM” text boxes.  Record your blood pressure as “systolic/diastolic.”  During your next appointment your physician can award you points if you maintain your blood pressures under the recommended level.  A weekly summary of your log will be emailed to your physician."];
 }
 
 - (void) updateBloodPressureValues

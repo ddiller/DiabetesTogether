@@ -264,6 +264,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="clickLight:" destination="d4e-6y-bJK" eventType="touchUpInside" id="Pqa-e5-rDg"/>
                                     <action selector="helpButton:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="6se-RX-JlH"/>
                                 </connections>
                             </button>
@@ -332,6 +333,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="clickLight:" destination="gaP-ah-Nh6" eventType="touchUpInside" id="Mcn-w3-nqc"/>
                                     <action selector="helpButton:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="QvA-0a-KlE"/>
                                 </connections>
                             </button>
@@ -463,6 +465,7 @@
                                 </state>
                                 <connections>
                                     <action selector="helpButton:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="af9-g6-Mvg"/>
+                                    <action selector="lightClicked:" destination="vfc-rW-kCx" eventType="touchUpInside" id="TVu-gl-NM4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -979,6 +982,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="clickLight:" destination="Td2-Qe-O6v" eventType="touchUpInside" id="KtO-Ya-zIZ"/>
                                             <action selector="helpButton:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="sCU-7Z-XtH"/>
                                         </connections>
                                     </button>
@@ -1102,6 +1106,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="clickLight:" destination="Oed-nW-0I2" eventType="touchUpInside" id="awC-xB-dlZ"/>
                                             <action selector="helpButton:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="iWQ-RX-TWG"/>
                                         </connections>
                                     </button>
@@ -1131,6 +1136,14 @@
     <resources>
         <image name="Facebook Logo" width="660" height="248"/>
         <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
+        <image name="Light-500" width="500" height="500"/>
         <image name="Med-AppJam-Logo.png" width="1000" height="1000"/>
         <image name="PointMeter" width="500" height="1000"/>
         <image name="Rewards" width="500" height="500"/>
@@ -1142,10 +1155,22 @@
         <image name="badge_silver" width="2000" height="1000"/>
         <image name="first" width="30" height="30"/>
         <image name="left-arrow-transparent.png" width="800" height="800"/>
+        <image name="left-arrow-transparent.png" width="800" height="800"/>
+        <image name="left-arrow-transparent.png" width="800" height="800"/>
+        <image name="left-arrow-transparent.png" width="800" height="800"/>
+        <image name="left-arrow-transparent.png" width="800" height="800"/>
+        <image name="left-arrow-transparent.png" width="800" height="800"/>
+        <image name="left-arrow-transparent.png" width="800" height="800"/>
         <image name="log-172" width="500" height="500"/>
+        <image name="log-172" width="500" height="500"/>
+        <image name="log-172" width="500" height="500"/>
+        <image name="log-172" width="500" height="500"/>
+        <image name="pencil-172" width="500" height="500"/>
+        <image name="pencil-172" width="500" height="500"/>
         <image name="pencil-172" width="500" height="500"/>
         <image name="platinum-badges-transparent.png" width="2800" height="1000"/>
         <image name="right-arrow-transparent.png" width="800" height="800"/>
+        <image name="runningman-172" width="500" height="500"/>
         <image name="runningman-172" width="500" height="500"/>
         <image name="second" width="30" height="30"/>
         <image name="settings" width="2390" height="2381"/>

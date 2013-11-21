@@ -102,6 +102,16 @@
 - (IBAction)quitClicked:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+-(void)showAlert:(NSString*)title withMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (IBAction)lightClicked:(id)sender {
+    [self showAlert:@"Quiz" withMessage:@"Earn points by taking quizzes and show off your knowledge of Diabetes!  Answer 5 diabetes quiz questions correctly in a row, and you can earn 20 points.  You have to get all 5 questions in a row correct to get points, but you can try as many times as you like.  You can get a maximum of 20 points per day for taking quizzes.  For each quiz question, pick the BEST answer.  "];
+}
+
 - (IBAction)nextQuestion:(id)sender {
     NSString* userAnswer = @"0";
     if(_checkOne.isOn){

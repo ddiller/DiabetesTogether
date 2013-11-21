@@ -48,7 +48,14 @@
     [super viewDidLoad];
     record = [[LogManager logManager] currentRecord];
 }
-
+-(void)showAlert:(NSString*)title withMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+- (IBAction)clickLight:(id)sender {
+    [self showAlert:@"Blood Glucose Log" withMessage:@"Record your daily “blood glucose” (blood sugar) levels here.  Be sure to log in your blood glucose levels both before and after each meal.  You can also record the total number of carbohydrates for each meal, in the box labeled “carbs” next to the corresponding meal.    If you keep your blood sugars within the recommended range your physician can award you points during your next visit.  A weekly summary of your log will be emailed to your physician."];
+}
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

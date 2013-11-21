@@ -31,7 +31,14 @@
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
+- (IBAction)clickLight:(id)sender {
+    [self showAlert:@"Classes" withMessage:@"Earn 100 points for attending a Diabetes education class!  When you attend an educational class on Diabetes at any one of our partner hospitals there will be a “QR code” available at the end of the class.  The QR code looks like a little box filled in with small black and white squares.  Press the “scan” button and hold the phone up next to the QR code and we will record your attendance.  Ask the Diabetes Education Instructor for the code at the end of the class to start racking up points.  "];
+}
+-(void)showAlert:(NSString*)title withMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
