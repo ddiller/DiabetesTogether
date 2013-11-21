@@ -8,6 +8,7 @@
 
 #import "settingsViewController.h"
 #import "PointManager.h"
+#import "LogManager.h"
 
 @interface settingsViewController ()
 @property (strong, nonatomic) PointManager *myPoints;
@@ -24,7 +25,7 @@
     return self;
 }
 - (IBAction)addPoints:(id)sender {
-    [self.myPoints addPointsVideo];
+    [self.myPoints addPointsClass];
 }
 
 
@@ -41,5 +42,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)removePoints:(id)sender {
+    [self.myPoints removePointsTwo];
+}
+- (IBAction)emailProgressButtonClick:(id)sender {
+    NSString *results = [[LogManager logManager] logDataFromDate:[NSDate dateWithTimeIntervalSinceNow:-1000000]];
+    NSLog(results);}
+
 
 @end

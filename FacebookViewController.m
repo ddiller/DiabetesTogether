@@ -51,6 +51,15 @@
 - (IBAction)goldPost:(id)sender {
     [self postFB:[UIImage imageNamed:@"badge_gold.png"]];
 }
+- (IBAction)backButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)titaniumPost:(id)sender {
+    [self postFB:[UIImage imageNamed:@"titanium-badges-transparent.png"]];
+}
+- (IBAction)platinumPost:(id)sender {
+    [self postFB:[UIImage imageNamed:@"platinum-badges-transparent.png"]];
+}
 
 - (void)viewDidLoad
 {

@@ -46,16 +46,10 @@
     [alert show];
 }
 
-- (IBAction)removeButton:(id)sender {
-    [self.myPoints removePointsOne];
-    [self showAlert:@"Spent Points" withMessage:[NSString stringWithFormat:@"good job u spent %d points", SPENTLEVELONE]];
-}
 
 
-- (IBAction)buttonTwoTouch:(id)sender {
-    [self.myPoints addPointsVideo];
-    [self showAlert:@"Added Points" withMessage:[NSString stringWithFormat:@"good job u added %d points", VIDEOPOINTS]];
-}
+
+
 
 
 

@@ -80,7 +80,7 @@
     }else if([self.score getPoints] >= 100){
         [_thermometer setImage:[UIImage imageNamed:@"thermometer-100.png" ]];
     }else{
-        [_thermometer setImage:[UIImage imageNamed:@"thermometer.png" ]];
+        [_thermometer setImage:[UIImage imageNamed:@"PointMeter.png" ]];
     }
 }
 

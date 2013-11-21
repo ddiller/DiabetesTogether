@@ -188,18 +188,50 @@
     NSArray *results = [managedObjectContext executeFetchRequest:request error:NULL];
     
     NSString *toReturn = @"<table border='1'>";
-    toReturn = [toReturn stringByAppendingFormat:@"<tr><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td></tr>", @"date", @"diastolic_am", @"systolic_am", @"diastolic_pm", @"systolic_pm", @"pre_glucose_breakfast", @"post_glucose_breakfast", @"carb_count_breakfast", @"pre_glucose_lunch", @"post_glucose_lunch", @"carb_count_lunch", @"pre_glucose_dinner", @"post_glucose_dinner", @"carb_count_dinner"];
+    toReturn = [toReturn stringByAppendingFormat:@"<tr><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td></tr>", @"date", @"Systolic AM", @"Diastolic AM", @"Systolic PM", @"Diastolic PM", @"Pre-breakfast Glucose", @"Post-breakfast Glucose", @"Carb-count Breakfast", @"Pre-lunch Glucose", @"Post-Lunch Glucose", @"Carb-count Lunch", @"Pre-dinner Glucose", @"Post-dinner Glucose", @"Carb-count Dinner"];
     for (Record *record in results) {
         BloodPressureValue *bsam = record.bsam;
         BloodPressureValue *bspm = record.bspm;
         GlucoseValue *gcbreak = record.gcbreak;
         GlucoseValue *gclunch = record.gclunch;
         GlucoseValue *gcdinner = record.gcdinner;
-        toReturn = [toReturn stringByAppendingFormat:@"<tr><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td></tr>", [Utility getDate:record.date inFormat:@"YY-MM-dd"], bsam.diastolic, bsam.systolic, bspm.diastolic, bspm.systolic, gcbreak.pre_glucose, gcbreak.post_glucose, gcbreak.carb_count, gclunch.pre_glucose, gclunch.post_glucose, gclunch.carb_count, gcdinner.pre_glucose, gcdinner.post_glucose, gcdinner.carb_count];
+        toReturn = [toReturn stringByAppendingFormat:@"<tr><td>%@</td>%@%@%@%@%@%@%@%@%@%@%@%@%@</tr>",
+                    [Utility getDate:record.date inFormat:@"YY-MM-dd"],
+                    [self tableCell:bsam.systolic ofType:0], [self tableCell:bsam.diastolic ofType:1],
+                    [self tableCell:bspm.systolic ofType:0], [self tableCell:bspm.diastolic ofType:1],
+                    [self tableCell:gcbreak.pre_glucose ofType:2], [self tableCell:gcbreak.post_glucose ofType:2], [self tableCell:gcbreak.carb_count ofType:3],
+                    [self tableCell:gclunch.pre_glucose ofType:2], [self tableCell:gclunch.post_glucose ofType:2], [self tableCell:gclunch.carb_count ofType:3],
+                    [self tableCell:gcdinner.pre_glucose ofType:2], [self tableCell:gcdinner.post_glucose ofType:2], [self tableCell:gcdinner.carb_count ofType:3]];
     }
     toReturn = [toReturn stringByAppendingString:@"</table>"];
     
     return toReturn;
+}
+
+- (NSString *) tableCell:(NSNumber *)value ofType:(NSInteger) type {
+    switch (type) {
+            
+            // 0:systolic :140
+            // 1:diastolic : 90
+            // 2:blood glucose
+            // default:carb-count
+        case 0:
+            if ([value floatValue] > 140)
+                return [NSString stringWithFormat:@"<td style='background-color:red'>%@</td>", value];
+            break;
+        case 1:
+            if ([value floatValue] > 90)
+                return [NSString stringWithFormat:@"<td style='background-color:red'>%@</td>", value];
+            break;
+        case 2:
+            if ([value floatValue] < 70)
+                return [NSString stringWithFormat:@"<td style='background-color:yellow'>%@</td>", value];
+            else if ([value floatValue] > 180)
+                return [NSString stringWithFormat:@"<td style='background-color:red'>%@</td>", value];
+        default:
+            break;
+    }
+    return [NSString stringWithFormat:@"<td>%@</td>", value];
 }
 
 - (void) saveContext {

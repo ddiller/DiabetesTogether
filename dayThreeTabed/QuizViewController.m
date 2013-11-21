@@ -11,7 +11,7 @@
 
 
 @interface QuizViewController ()
-
+@property (nonatomic) NSInteger questionProgress;
 @property (weak, nonatomic) IBOutlet UILabel *questionTitle;
 @property (weak, nonatomic) IBOutlet UILabel *questionBody;
 @property (weak, nonatomic) IBOutlet UILabel *answerOne;
@@ -39,7 +39,7 @@
     return self;
 }
 -(void)setQuestions:(quizManager*)qManager{
-    self.questionTitle.text = [NSString stringWithFormat:@"Question Number: %d", (int)qManager.questionNumber +1];
+    self.questionTitle.text = [NSString stringWithFormat:@"Question Number: %d", (int)self.questionProgress +1];
     self.questionBody.text = [qManager.questions objectAtIndex:((int)qManager.questionNumber)];
     self.answerOne.text = [qManager.answersA objectAtIndex:((int)qManager.questionNumber)];
     self.answerTwo.text = [qManager.answersB objectAtIndex:((int)qManager.questionNumber)];
@@ -94,7 +94,9 @@
     [super viewDidLoad];
 	self.quizManager = [[quizManager alloc] init];
     NSLog(@"opened quiz manager");
+    [self.quizManager nextQuestion];
     [self setQuestions:self.quizManager];
+    self.questionProgress = 0;
     
 }
 - (IBAction)quitClicked:(id)sender {
@@ -113,7 +115,7 @@
     }else{}
     if(![userAnswer  isEqual: @"0"]){
         int questionNum = (int)self.quizManager.questionNumber;
-        if((int)self.quizManager.questionNumber == NUMQUESTIONS){
+        if(self.questionProgress == 5){
             if([[self.quizManager.answers objectAtIndex:questionNum] isEqualToString: userAnswer]){
                 [self.quizManager addPoints];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Well Done!" message:[NSString stringWithFormat:@"good job u earned %d points", QUIZPOINTS] delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -121,9 +123,10 @@
                 [self dismissViewControllerAnimated:YES completion:nil];
             
             }else{
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong" message:[NSString stringWithFormat:@"%@%@", @"The correct answer is: ",[self.quizManager.answers objectAtIndex:questionNum]] delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Incorrect, Sorry" message:[self.quizManager.descriptions objectAtIndex:questionNum] delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
                 [self.quizManager startOver];
+                self.questionProgress = 0;
                 [self resetButtons];
                 [self setQuestions:self.quizManager];
             }
@@ -133,12 +136,13 @@
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Good Job" message:@"you got that one right!" delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
                 [self.quizManager nextQuestion];
+                self.questionProgress++;
                 [self resetButtons];
                 [self setQuestions:self.quizManager];
             }else {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong" message:[NSString stringWithFormat:@"%@%@", @"The correct answer is: ",[self.quizManager.answers objectAtIndex:questionNum]] delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Incorrect, Sorry" message:[self.quizManager.descriptions objectAtIndex:questionNum] delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
-
+                self.questionProgress = 0;
                 [self.quizManager startOver];
                 [self resetButtons];
                 [self setQuestions:self.quizManager];
