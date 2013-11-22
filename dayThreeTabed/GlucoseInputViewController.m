@@ -82,7 +82,7 @@
 - (void)resetScrollView {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
-    scrollView.contentSize = CGSizeMake(screenWidth, 500);
+    scrollView.contentSize = CGSizeMake(screenWidth, 550);
     scrollView.frame = screenRect;
 }
 
@@ -151,7 +151,7 @@
     NSDictionary* info = [aNotification userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(60, 0.0, kbSize.height, 0.0);
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
     scrollView.contentInset = contentInsets;
     scrollView.scrollIndicatorInsets = contentInsets;
     
@@ -181,5 +181,10 @@
     scrollView.scrollIndicatorInsets = contentInsets;
     [self resetScrollView];
 }
+
+- (IBAction)emailButtonClick:(id)sender {
+    [[LogManager logManager] sendLogToEmail];
+}
+
 
 @end

@@ -13,11 +13,13 @@
 #import "BloodPressureValue.h"
 #import "RecordViewModel.h"
 #import "Utility.h"
+#import <MailCore/mailcore.h>
 
 
 @interface LogManager()
 
 @property (nonatomic, weak) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, weak) NSString *email;
 
 @end
 
@@ -188,7 +190,7 @@
     NSArray *results = [managedObjectContext executeFetchRequest:request error:NULL];
     
     NSString *toReturn = @"<table border='1'>";
-    toReturn = [toReturn stringByAppendingFormat:@"<tr><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td></tr>", @"date", @"Systolic AM", @"Diastolic AM", @"Systolic PM", @"Diastolic PM", @"Pre-breakfast Glucose", @"Post-breakfast Glucose", @"Carb-count Breakfast", @"Pre-lunch Glucose", @"Post-Lunch Glucose", @"Carb-count Lunch", @"Pre-dinner Glucose", @"Post-dinner Glucose", @"Carb-count Dinner"];
+    toReturn = [toReturn stringByAppendingFormat:@"<tr><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td><td>%@</td></tr>", @"Date", @"Systolic AM", @"Diastolic AM", @"Systolic PM", @"Diastolic PM", @"Pre-breakfast Glucose", @"Post-breakfast Glucose", @"Carb-count Breakfast", @"Pre-lunch Glucose", @"Post-Lunch Glucose", @"Carb-count Lunch", @"Pre-dinner Glucose", @"Post-dinner Glucose", @"Carb-count Dinner"];
     for (Record *record in results) {
         BloodPressureValue *bsam = record.bsam;
         BloodPressureValue *bspm = record.bspm;
@@ -209,6 +211,10 @@
 }
 
 - (NSString *) tableCell:(NSNumber *)value ofType:(NSInteger) type {
+    if (value == nil) {
+        return [NSString stringWithFormat:@"<td></td>"];
+
+    }
     switch (type) {
             
             // 0:systolic :140
@@ -243,6 +249,55 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
+    }
+}
+
+- (void) sendLogToEmail {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Destination Email" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+    
+    UITextField *username = [alertView textFieldAtIndex:0];
+    NSLog(@"Email: %@", username.text);
+    self.email = username.text;
+    
+    MCOSMTPSession *smtpSession = [[MCOSMTPSession alloc] init];
+    smtpSession.hostname = @"smtp.gmail.com";
+    smtpSession.port = 465;
+    smtpSession.username = @"diabetestogetheruci@gmail.com";
+    smtpSession.password = @"diabetes123";
+    smtpSession.authType = MCOAuthTypeSASLPlain;
+    smtpSession.connectionType = MCOConnectionTypeTLS;
+    
+    MCOMessageBuilder *builder = [[MCOMessageBuilder alloc] init];
+    MCOAddress *from = [MCOAddress addressWithDisplayName:@"DiabetesTogether"
+                                                  mailbox:@"diabetestogetheruci@gmail.com"];
+    MCOAddress *to = [MCOAddress addressWithDisplayName:nil
+                                                mailbox:self.email];
+    
+    NSString *results = [[LogManager logManager] logDataFromDate:[NSDate dateWithTimeIntervalSinceNow:-1000000]];
+    NSLog(results);
+    
+    [[builder header] setFrom:from];
+    [[builder header] setTo:@[to]];
+    [[builder header] setSubject:@"DiabetesTogether Log"];
+    [builder setHTMLBody:results];
+    NSData * rfc822Data = [builder data];
+    
+    MCOSMTPSendOperation *sendOperation =
+    [smtpSession sendOperationWithData:rfc822Data];
+    [sendOperation start:^(NSError *error) {
+        if(error) {
+            NSLog(@"Error sending email: %@", error);
+        } else {
+            NSLog(@"Successfully sent email!");
+        }
+    }];
     }
 }
 

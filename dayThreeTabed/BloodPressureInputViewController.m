@@ -151,5 +151,8 @@
     scrollView.contentInset = contentInsets;
     scrollView.scrollIndicatorInsets = contentInsets;
 }
+- (IBAction)emailButtonClick:(id)sender {
+    [[LogManager logManager] sendLogToEmail];
+}
 
 @end

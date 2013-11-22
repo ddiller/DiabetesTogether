@@ -47,6 +47,7 @@
 		41306176183D935E00FEE9CD /* Med-AppJam-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306175183D935E00FEE9CD /* Med-AppJam-Logo.png */; };
 		413BEA3D1839B7BF0008AB6D /* StepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413BEA3C1839B7BF0008AB6D /* StepsViewController.m */; };
 		414019021833134900A78834 /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414019011833134900A78834 /* settingsViewController.m */; };
+		4141F4DD183ECB33008C6BD7 /* Mail-500.png in Resources */ = {isa = PBXBuildFile; fileRef = 4141F4DC183ECB33008C6BD7 /* Mail-500.png */; };
 		414AC1CB1832C6D100E566C1 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414AC1CA1832C6D100E566C1 /* QuizViewController.m */; };
 		414EC6311832D44000C4AB88 /* quizManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 414EC6301832D44000C4AB88 /* quizManager.m */; };
 		4166EC1E1836D857001621EE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4166EC1D1836D857001621EE /* FacebookSDK.framework */; };
@@ -187,6 +188,7 @@
 		413BEA3C1839B7BF0008AB6D /* StepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepsViewController.m; sourceTree = "<group>"; };
 		414019001833134900A78834 /* settingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsViewController.h; sourceTree = "<group>"; };
 		414019011833134900A78834 /* settingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsViewController.m; sourceTree = "<group>"; };
+		4141F4DC183ECB33008C6BD7 /* Mail-500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail-500.png"; sourceTree = "<group>"; };
 		414AC1C91832C6D100E566C1 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		414AC1CA1832C6D100E566C1 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		414EC62F1832D44000C4AB88 /* quizManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quizManager.h; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 		4127FB1918303C2400704C33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4141F4DC183ECB33008C6BD7 /* Mail-500.png */,
 				41306175183D935E00FEE9CD /* Med-AppJam-Logo.png */,
 				41306171183D923500FEE9CD /* left-arrow-transparent.png */,
 				41306172183D923500FEE9CD /* right-arrow-transparent.png */,
@@ -613,6 +616,7 @@
 				4130616E183D89E800FEE9CD /* platinum-badges-transparent.png in Resources */,
 				41306119183D517E00FEE9CD /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */,
 				41306159183D53B900FEE9CD /* zbar-help.html in Resources */,
+				4141F4DD183ECB33008C6BD7 /* Mail-500.png in Resources */,
 				4130615B183D53B900FEE9CD /* zbar-samples.png in Resources */,
 				4130611B183D517E00FEE9CD /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 in Resources */,
 				4127FB2618303C2400704C33 /* Main_iPhone.storyboard in Resources */,

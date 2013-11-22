@@ -111,6 +111,36 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
             endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FirstViewController labelOne]"
+                  moduleName = "DiabetesTogether"
+                  urlString = "file://localhost/Users/appjam/Desktop/dayThreeTabed/dayThreeTabed/FirstViewController.m"
+                  timestampString = "406773356.578206"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FirstViewController setLabelOne:]"
+                  moduleName = "DiabetesTogether"
+                  urlString = "file://localhost/Users/appjam/Desktop/dayThreeTabed/dayThreeTabed/FirstViewController.m"
+                  timestampString = "406773356.578883"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

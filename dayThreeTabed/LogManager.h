@@ -21,7 +21,7 @@ typedef enum {
 
 
 
-@interface LogManager : NSObject
+@interface LogManager : NSObject <UIAlertViewDelegate>
 
 - (RecordViewModel *) recordViewModel;
 - (BOOL) isWeekComplete;
@@ -30,6 +30,7 @@ typedef enum {
 + (LogManager *) logManager;
 - (NSString *) logDataFromDate:(NSDate *)date;
 - (void) saveContext;
+- (void) sendLogToEmail;
 
 @end
 
