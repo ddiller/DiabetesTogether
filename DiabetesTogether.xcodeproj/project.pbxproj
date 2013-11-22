@@ -23,16 +23,7 @@
 		4127FB4218303C2500704C33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4127FB4018303C2500704C33 /* InfoPlist.strings */; };
 		4127FB4418303C2500704C33 /* dayThreeTabedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4127FB4318303C2500704C33 /* dayThreeTabedTests.m */; };
 		4127FB4F1830435E00704C33 /* pointsSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4127FB4E1830435E00704C33 /* pointsSystem.m */; };
-		41306118183D517E00FEE9CD /* diabetes-travel-tips-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 413060D0183D517E00FEE9CD /* diabetes-travel-tips-508.mp4 */; };
-		41306119183D517E00FEE9CD /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 413060D1183D517E00FEE9CD /* eating-healthy-diabetes-gatherings-508.mp4 */; };
-		4130611A183D517E00FEE9CD /* healthy-eating-diabetes-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 413060D2183D517E00FEE9CD /* healthy-eating-diabetes-508.mp4 */; };
-		4130611B183D517E00FEE9CD /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 413060D3183D517E00FEE9CD /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */; };
 		41306138183D524B00FEE9CD /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41306137183D524B00FEE9CD /* QRViewController.m */; };
-		41306157183D53B900FEE9CD /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41306151183D53B900FEE9CD /* libzbar.a */; };
-		41306158183D53B900FEE9CD /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306153183D53B900FEE9CD /* zbar-back.png */; };
-		41306159183D53B900FEE9CD /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 41306154183D53B900FEE9CD /* zbar-help.html */; };
-		4130615A183D53B900FEE9CD /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306155183D53B900FEE9CD /* zbar-helpicons.png */; };
-		4130615B183D53B900FEE9CD /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306156183D53B900FEE9CD /* zbar-samples.png */; };
 		4130615D183D53FC00FEE9CD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4130615C183D53FC00FEE9CD /* AVFoundation.framework */; };
 		4130615F183D540000FEE9CD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4130615E183D540000FEE9CD /* CoreMedia.framework */; };
 		41306161183D540600FEE9CD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41306160183D540600FEE9CD /* CoreVideo.framework */; };
@@ -60,10 +51,18 @@
 		4169CD9A183C2C1300158605 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169CD99183C2C1300158605 /* Record.m */; };
 		4169CD9D183C2C1300158605 /* BloodPressureValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169CD9C183C2C1300158605 /* BloodPressureValue.m */; };
 		4169CDA0183C2C1300158605 /* GlucoseValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169CD9F183C2C1300158605 /* GlucoseValue.m */; };
-		4169CDEB183C419D00158605 /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4169CDE4183C419400158605 /* libMailCore-ios.a */; };
 		4169CDED183C41A600158605 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4169CDEC183C41A600158605 /* Security.framework */; };
 		4169CDEF183C41B700158605 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4169CDEE183C41B700158605 /* CFNetwork.framework */; };
 		4169CDF2183C5A8E00158605 /* RewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169CDF1183C5A8E00158605 /* RewardsViewController.m */; };
+		41ACC265183DFCA20007F36E /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41ACC25F183DFCA20007F36E /* libzbar.a */; };
+		41ACC266183DFCA20007F36E /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC261183DFCA20007F36E /* zbar-back.png */; };
+		41ACC267183DFCA20007F36E /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC262183DFCA20007F36E /* zbar-help.html */; };
+		41ACC268183DFCA20007F36E /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC263183DFCA20007F36E /* zbar-helpicons.png */; };
+		41ACC269183DFCA20007F36E /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC264183DFCA20007F36E /* zbar-samples.png */; };
+		41ACC272183DFDFC0007F36E /* diabetes-travel-tips-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC26E183DFDC40007F36E /* diabetes-travel-tips-508.mp4 */; };
+		41ACC273183DFDFC0007F36E /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC26F183DFDC40007F36E /* eating-healthy-diabetes-gatherings-508.mp4 */; };
+		41ACC274183DFDFC0007F36E /* healthy-eating-diabetes-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC270183DFDC40007F36E /* healthy-eating-diabetes-508.mp4 */; };
+		41ACC275183DFDFC0007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC271183DFDC40007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */; };
 		41E60A6A18318A4B005F8807 /* PointManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E60A6918318A4B005F8807 /* PointManager.m */; };
 		41E812BD18373C4A0052383D /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E812BC18373C4A0052383D /* FacebookViewController.m */; };
 		41E812BF18373DB40052383D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E812BE18373DB40052383D /* Social.framework */; };
@@ -76,41 +75,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4127FB0E18303C2400704C33;
 			remoteInfo = dayThreeTabed;
-		};
-		4169CDE1183C419400158605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4169CDD9183C419300158605 /* mailcore2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C64EA537169E772200778456;
-			remoteInfo = "static mailcore2 osx";
-		};
-		4169CDE3183C419400158605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4169CDD9183C419300158605 /* mailcore2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
-			remoteInfo = "static mailcore2 ios";
-		};
-		4169CDE5183C419400158605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4169CDD9183C419300158605 /* mailcore2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C64EA78C169F259200778456;
-			remoteInfo = tests;
-		};
-		4169CDE7183C419400158605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4169CDD9183C419300158605 /* mailcore2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C6A81B911706840C00882C15;
-			remoteInfo = "test-ios";
-		};
-		4169CDE9183C419400158605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4169CDD9183C419300158605 /* mailcore2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
-			remoteInfo = "mailcore osx";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -138,37 +102,8 @@
 		4127FB4318303C2500704C33 /* dayThreeTabedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dayThreeTabedTests.m; sourceTree = "<group>"; };
 		4127FB4D1830435E00704C33 /* pointsSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointsSystem.h; sourceTree = "<group>"; };
 		4127FB4E1830435E00704C33 /* pointsSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pointsSystem.m; sourceTree = "<group>"; };
-		413060D0183D517E00FEE9CD /* diabetes-travel-tips-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "diabetes-travel-tips-508.mp4"; path = "medappjam2013/diabetes-travel-tips-508.mp4"; sourceTree = "<group>"; };
-		413060D1183D517E00FEE9CD /* eating-healthy-diabetes-gatherings-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "eating-healthy-diabetes-gatherings-508.mp4"; path = "medappjam2013/eating-healthy-diabetes-gatherings-508.mp4"; sourceTree = "<group>"; };
-		413060D2183D517E00FEE9CD /* healthy-eating-diabetes-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "healthy-eating-diabetes-508.mp4"; path = "medappjam2013/healthy-eating-diabetes-508.mp4"; sourceTree = "<group>"; };
-		413060D3183D517E00FEE9CD /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4"; path = "medappjam2013/Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4"; sourceTree = "<group>"; };
 		41306136183D524B00FEE9CD /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		41306137183D524B00FEE9CD /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
-		4130613D183D53B900FEE9CD /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
-		4130613E183D53B900FEE9CD /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
-		4130613F183D53B900FEE9CD /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
-		41306140183D53B900FEE9CD /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
-		41306141183D53B900FEE9CD /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
-		41306142183D53B900FEE9CD /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
-		41306143183D53B900FEE9CD /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
-		41306144183D53B900FEE9CD /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
-		41306145183D53B900FEE9CD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
-		41306146183D53B900FEE9CD /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
-		41306147183D53B900FEE9CD /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
-		41306148183D53B900FEE9CD /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
-		41306149183D53B900FEE9CD /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
-		4130614A183D53B900FEE9CD /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
-		4130614B183D53B900FEE9CD /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
-		4130614C183D53B900FEE9CD /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
-		4130614D183D53B900FEE9CD /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
-		4130614E183D53B900FEE9CD /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
-		4130614F183D53B900FEE9CD /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
-		41306150183D53B900FEE9CD /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
-		41306151183D53B900FEE9CD /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
-		41306153183D53B900FEE9CD /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
-		41306154183D53B900FEE9CD /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
-		41306155183D53B900FEE9CD /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
-		41306156183D53B900FEE9CD /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
 		4130615C183D53FC00FEE9CD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4130615E183D540000FEE9CD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		41306160183D540600FEE9CD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -210,11 +145,39 @@
 		4169CD9C183C2C1300158605 /* BloodPressureValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodPressureValue.m; sourceTree = "<group>"; };
 		4169CD9E183C2C1300158605 /* GlucoseValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlucoseValue.h; sourceTree = "<group>"; };
 		4169CD9F183C2C1300158605 /* GlucoseValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlucoseValue.m; sourceTree = "<group>"; };
-		4169CDD9183C419300158605 /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "../../Downloads/mailcore2-master/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
 		4169CDEC183C41A600158605 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4169CDEE183C41B700158605 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4169CDF0183C5A8E00158605 /* RewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsViewController.h; sourceTree = "<group>"; };
 		4169CDF1183C5A8E00158605 /* RewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsViewController.m; sourceTree = "<group>"; };
+		41ACC24B183DFCA20007F36E /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		41ACC24C183DFCA20007F36E /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		41ACC24D183DFCA20007F36E /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		41ACC24E183DFCA20007F36E /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		41ACC24F183DFCA20007F36E /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		41ACC250183DFCA20007F36E /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		41ACC251183DFCA20007F36E /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		41ACC252183DFCA20007F36E /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		41ACC253183DFCA20007F36E /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		41ACC254183DFCA20007F36E /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		41ACC255183DFCA20007F36E /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		41ACC256183DFCA20007F36E /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		41ACC257183DFCA20007F36E /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		41ACC258183DFCA20007F36E /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		41ACC259183DFCA20007F36E /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		41ACC25A183DFCA20007F36E /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		41ACC25B183DFCA20007F36E /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		41ACC25C183DFCA20007F36E /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		41ACC25D183DFCA20007F36E /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		41ACC25E183DFCA20007F36E /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		41ACC25F183DFCA20007F36E /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		41ACC261183DFCA20007F36E /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		41ACC262183DFCA20007F36E /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		41ACC263183DFCA20007F36E /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		41ACC264183DFCA20007F36E /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		41ACC26E183DFDC40007F36E /* diabetes-travel-tips-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "diabetes-travel-tips-508.mp4"; sourceTree = "<group>"; };
+		41ACC26F183DFDC40007F36E /* eating-healthy-diabetes-gatherings-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "eating-healthy-diabetes-gatherings-508.mp4"; sourceTree = "<group>"; };
+		41ACC270183DFDC40007F36E /* healthy-eating-diabetes-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "healthy-eating-diabetes-508.mp4"; sourceTree = "<group>"; };
+		41ACC271183DFDC40007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4"; sourceTree = "<group>"; };
 		41E60A6818318A4B005F8807 /* PointManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointManager.h; sourceTree = "<group>"; };
 		41E60A6918318A4B005F8807 /* PointManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointManager.m; sourceTree = "<group>"; };
 		41E812BB18373C4A0052383D /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookViewController.h; path = ../FacebookViewController.h; sourceTree = "<group>"; };
@@ -229,19 +192,18 @@
 			files = (
 				41306165183D541200FEE9CD /* libiconv.dylib in Frameworks */,
 				41306163183D540B00FEE9CD /* QuartzCore.framework in Frameworks */,
+				41ACC265183DFCA20007F36E /* libzbar.a in Frameworks */,
 				41306161183D540600FEE9CD /* CoreVideo.framework in Frameworks */,
 				4130615F183D540000FEE9CD /* CoreMedia.framework in Frameworks */,
 				4130615D183D53FC00FEE9CD /* AVFoundation.framework in Frameworks */,
 				4169CDEF183C41B700158605 /* CFNetwork.framework in Frameworks */,
 				4169CDED183C41A600158605 /* Security.framework in Frameworks */,
-				4169CDEB183C419D00158605 /* libMailCore-ios.a in Frameworks */,
 				4169CD5F183C1E9400158605 /* CoreData.framework in Frameworks */,
 				41E812BF18373DB40052383D /* Social.framework in Frameworks */,
 				4127FB1518303C2400704C33 /* CoreGraphics.framework in Frameworks */,
 				4166EC1E1836D857001621EE /* FacebookSDK.framework in Frameworks */,
 				4127FB1718303C2400704C33 /* UIKit.framework in Frameworks */,
 				4127FB1318303C2400704C33 /* Foundation.framework in Frameworks */,
-				41306157183D53B900FEE9CD /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,12 +223,11 @@
 		4127FB0618303C2400704C33 = {
 			isa = PBXGroup;
 			children = (
-				41306139183D53B900FEE9CD /* ZBarSDK */,
-				413060D0183D517E00FEE9CD /* diabetes-travel-tips-508.mp4 */,
-				413060D1183D517E00FEE9CD /* eating-healthy-diabetes-gatherings-508.mp4 */,
-				413060D2183D517E00FEE9CD /* healthy-eating-diabetes-508.mp4 */,
-				413060D3183D517E00FEE9CD /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */,
-				4169CDD9183C419300158605 /* mailcore2.xcodeproj */,
+				41ACC26E183DFDC40007F36E /* diabetes-travel-tips-508.mp4 */,
+				41ACC26F183DFDC40007F36E /* eating-healthy-diabetes-gatherings-508.mp4 */,
+				41ACC270183DFDC40007F36E /* healthy-eating-diabetes-508.mp4 */,
+				41ACC271183DFDC40007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */,
+				41ACC247183DFCA20007F36E /* ZBarSDK */,
 				4127FB1818303C2400704C33 /* dayThreeTabed */,
 				4127FB3D18303C2500704C33 /* dayThreeTabedTests */,
 				4127FB1118303C2400704C33 /* Frameworks */,
@@ -386,70 +347,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		41306139183D53B900FEE9CD /* ZBarSDK */ = {
-			isa = PBXGroup;
-			children = (
-				4130613A183D53B900FEE9CD /* Headers */,
-				41306151183D53B900FEE9CD /* libzbar.a */,
-				41306152183D53B900FEE9CD /* Resources */,
-			);
-			path = ZBarSDK;
-			sourceTree = "<group>";
-		};
-		4130613A183D53B900FEE9CD /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				4130613B183D53B900FEE9CD /* ZBarSDK */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		4130613B183D53B900FEE9CD /* ZBarSDK */ = {
-			isa = PBXGroup;
-			children = (
-				4130613C183D53B900FEE9CD /* zbar */,
-				41306146183D53B900FEE9CD /* zbar.h */,
-				41306147183D53B900FEE9CD /* ZBarCameraSimulator.h */,
-				41306148183D53B900FEE9CD /* ZBarCaptureReader.h */,
-				41306149183D53B900FEE9CD /* ZBarHelpController.h */,
-				4130614A183D53B900FEE9CD /* ZBarImage.h */,
-				4130614B183D53B900FEE9CD /* ZBarImageScanner.h */,
-				4130614C183D53B900FEE9CD /* ZBarReaderController.h */,
-				4130614D183D53B900FEE9CD /* ZBarReaderView.h */,
-				4130614E183D53B900FEE9CD /* ZBarReaderViewController.h */,
-				4130614F183D53B900FEE9CD /* ZBarSDK.h */,
-				41306150183D53B900FEE9CD /* ZBarSymbol.h */,
-			);
-			path = ZBarSDK;
-			sourceTree = "<group>";
-		};
-		4130613C183D53B900FEE9CD /* zbar */ = {
-			isa = PBXGroup;
-			children = (
-				4130613D183D53B900FEE9CD /* Decoder.h */,
-				4130613E183D53B900FEE9CD /* Exception.h */,
-				4130613F183D53B900FEE9CD /* Image.h */,
-				41306140183D53B900FEE9CD /* ImageScanner.h */,
-				41306141183D53B900FEE9CD /* Processor.h */,
-				41306142183D53B900FEE9CD /* Scanner.h */,
-				41306143183D53B900FEE9CD /* Symbol.h */,
-				41306144183D53B900FEE9CD /* Video.h */,
-				41306145183D53B900FEE9CD /* Window.h */,
-			);
-			path = zbar;
-			sourceTree = "<group>";
-		};
-		41306152183D53B900FEE9CD /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				41306153183D53B900FEE9CD /* zbar-back.png */,
-				41306154183D53B900FEE9CD /* zbar-help.html */,
-				41306155183D53B900FEE9CD /* zbar-helpicons.png */,
-				41306156183D53B900FEE9CD /* zbar-samples.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		4169CD66183C214700158605 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,16 +362,68 @@
 			name = model;
 			sourceTree = "<group>";
 		};
-		4169CDDA183C419300158605 /* Products */ = {
+		41ACC247183DFCA20007F36E /* ZBarSDK */ = {
 			isa = PBXGroup;
 			children = (
-				4169CDE2183C419400158605 /* libMailCore.a */,
-				4169CDE4183C419400158605 /* libMailCore-ios.a */,
-				4169CDE6183C419400158605 /* tests */,
-				4169CDE8183C419400158605 /* test-ios.app */,
-				4169CDEA183C419400158605 /* MailCore.framework */,
+				41ACC248183DFCA20007F36E /* Headers */,
+				41ACC25F183DFCA20007F36E /* libzbar.a */,
+				41ACC260183DFCA20007F36E /* Resources */,
 			);
-			name = Products;
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		41ACC248183DFCA20007F36E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				41ACC249183DFCA20007F36E /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		41ACC249183DFCA20007F36E /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				41ACC24A183DFCA20007F36E /* zbar */,
+				41ACC254183DFCA20007F36E /* zbar.h */,
+				41ACC255183DFCA20007F36E /* ZBarCameraSimulator.h */,
+				41ACC256183DFCA20007F36E /* ZBarCaptureReader.h */,
+				41ACC257183DFCA20007F36E /* ZBarHelpController.h */,
+				41ACC258183DFCA20007F36E /* ZBarImage.h */,
+				41ACC259183DFCA20007F36E /* ZBarImageScanner.h */,
+				41ACC25A183DFCA20007F36E /* ZBarReaderController.h */,
+				41ACC25B183DFCA20007F36E /* ZBarReaderView.h */,
+				41ACC25C183DFCA20007F36E /* ZBarReaderViewController.h */,
+				41ACC25D183DFCA20007F36E /* ZBarSDK.h */,
+				41ACC25E183DFCA20007F36E /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		41ACC24A183DFCA20007F36E /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				41ACC24B183DFCA20007F36E /* Decoder.h */,
+				41ACC24C183DFCA20007F36E /* Exception.h */,
+				41ACC24D183DFCA20007F36E /* Image.h */,
+				41ACC24E183DFCA20007F36E /* ImageScanner.h */,
+				41ACC24F183DFCA20007F36E /* Processor.h */,
+				41ACC250183DFCA20007F36E /* Scanner.h */,
+				41ACC251183DFCA20007F36E /* Symbol.h */,
+				41ACC252183DFCA20007F36E /* Video.h */,
+				41ACC253183DFCA20007F36E /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		41ACC260183DFCA20007F36E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41ACC261183DFCA20007F36E /* zbar-back.png */,
+				41ACC262183DFCA20007F36E /* zbar-help.html */,
+				41ACC263183DFCA20007F36E /* zbar-helpicons.png */,
+				41ACC264183DFCA20007F36E /* zbar-samples.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,12 +492,6 @@
 			mainGroup = 4127FB0618303C2400704C33;
 			productRefGroup = 4127FB1018303C2400704C33 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4169CDDA183C419300158605 /* Products */;
-					ProjectRef = 4169CDD9183C419300158605 /* mailcore2.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4127FB0E18303C2400704C33 /* DiabetesTogether */,
@@ -557,64 +500,26 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		4169CDE2183C419400158605 /* libMailCore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMailCore.a;
-			remoteRef = 4169CDE1183C419400158605 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4169CDE4183C419400158605 /* libMailCore-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libMailCore-ios.a";
-			remoteRef = 4169CDE3183C419400158605 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4169CDE6183C419400158605 /* tests */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = tests;
-			remoteRef = 4169CDE5183C419400158605 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4169CDE8183C419400158605 /* test-ios.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "test-ios.app";
-			remoteRef = 4169CDE7183C419400158605 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4169CDEA183C419400158605 /* MailCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MailCore.framework;
-			remoteRef = 4169CDE9183C419400158605 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		4127FB0D18303C2400704C33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41ACC272183DFDFC0007F36E /* diabetes-travel-tips-508.mp4 in Resources */,
+				41ACC273183DFDFC0007F36E /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */,
+				41ACC274183DFDFC0007F36E /* healthy-eating-diabetes-508.mp4 in Resources */,
+				41ACC275183DFDFC0007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 in Resources */,
+				41ACC266183DFCA20007F36E /* zbar-back.png in Resources */,
 				41306176183D935E00FEE9CD /* Med-AppJam-Logo.png in Resources */,
-				41306118183D517E00FEE9CD /* diabetes-travel-tips-508.mp4 in Resources */,
-				41306158183D53B900FEE9CD /* zbar-back.png in Resources */,
 				41306170183D89F700FEE9CD /* titanium-badges-transparent.png in Resources */,
+				41ACC269183DFCA20007F36E /* zbar-samples.png in Resources */,
 				41306173183D923500FEE9CD /* left-arrow-transparent.png in Resources */,
-				4130615A183D53B900FEE9CD /* zbar-helpicons.png in Resources */,
-				4130611A183D517E00FEE9CD /* healthy-eating-diabetes-508.mp4 in Resources */,
+				41ACC268183DFCA20007F36E /* zbar-helpicons.png in Resources */,
 				4127FB2918303C2400704C33 /* Main_iPad.storyboard in Resources */,
 				4127FB3118303C2400704C33 /* Images.xcassets in Resources */,
 				41306174183D923500FEE9CD /* right-arrow-transparent.png in Resources */,
 				4130616E183D89E800FEE9CD /* platinum-badges-transparent.png in Resources */,
-				41306119183D517E00FEE9CD /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */,
-				41306159183D53B900FEE9CD /* zbar-help.html in Resources */,
-				4130615B183D53B900FEE9CD /* zbar-samples.png in Resources */,
-				4130611B183D517E00FEE9CD /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 in Resources */,
+				41ACC267183DFCA20007F36E /* zbar-help.html in Resources */,
 				4127FB2618303C2400704C33 /* Main_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -802,15 +707,10 @@
 					"$(inherited)",
 					/Users/appjam/Desktop/dayThreeTabed/medappjam2013/ZBarSDK,
 					/Users/appjam/Desktop/dayThreeTabed/ZBarSDK,
+					/Users/appjam/Downloads/DiabetesTogether/ZBarSDK,
 				);
 				OTHER_LDFLAGS = (
-					"-lctemplate-ios",
-					"-letpan-ios",
-					"-licudata",
-					"-licui18n",
-					"-licuuc",
 					"-lxml2",
-					"-lsasl2",
 					"-liconv",
 					"-ltidy",
 					"-lz",
@@ -846,15 +746,10 @@
 					"$(inherited)",
 					/Users/appjam/Desktop/dayThreeTabed/medappjam2013/ZBarSDK,
 					/Users/appjam/Desktop/dayThreeTabed/ZBarSDK,
+					/Users/appjam/Downloads/DiabetesTogether/ZBarSDK,
 				);
 				OTHER_LDFLAGS = (
-					"-lctemplate-ios",
-					"-letpan-ios",
-					"-licudata",
-					"-licui18n",
-					"-licuuc",
 					"-lxml2",
-					"-lsasl2",
 					"-liconv",
 					"-ltidy",
 					"-lz",

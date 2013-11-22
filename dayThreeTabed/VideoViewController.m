@@ -17,13 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.myPoints = [[PointManager alloc] init];
     _videoTable.dataSource = self;
     _videoTable.delegate = self;
     _finished = true;
-    VideoFiles* file = [[VideoFiles alloc] initWithURL:@"http://ndep.nih.gov/media/The-Lasting-Impact-of-Gestational-Diabetes-508.mp4" withTitle: @"The Lasting Impact of Gestational Diabetes" asURL:TRUE];
+    VideoFiles* file = [[VideoFiles alloc] initWithURL:@"Living_a_Balanced_Life_With_Diabetes-Webinar_Video " withTitle: @"Living a Balanced Life With Diabetes" asURL:FALSE];
     VideoFiles* file1 = [[VideoFiles alloc] initWithURL: @"diabetes-travel-tips-508" withTitle: @"Diabetes travel tips." asURL:FALSE];
     VideoFiles* file2 = [[VideoFiles alloc] initWithURL:@"eating-healthy-diabetes-gatherings-508" withTitle: @"Eating healthy at gatherings." asURL:FALSE];
-    VideoFiles* file3 = [[VideoFiles alloc] initWithURL:@"healthy-eating-diabetes-508" withTitle: @"Eating healthy" asURL:FALSE];
+    VideoFiles* file3 = [[VideoFiles alloc] initWithURL:@"healthy-eating-diabetes-508" withTitle: @"Eating healthy." asURL:FALSE];
 
     _tableData = [NSArray arrayWithObjects:file, file1, file2, file3,	 nil];
 
@@ -126,6 +127,10 @@
         [_player setFullscreen:NO];
         [_player stop];
         NSLog(@"You get points!");
+        [self showAlert:@"Points!" withMessage:@"You got points!"];
+        NSLog(@"%d", [self.myPoints getPoints]);
+        [self.myPoints addPointsVideo];
+        NSLog(@"%d", [self.myPoints getPoints]);
     }
     else
     {
@@ -133,6 +138,12 @@
         [_player stop];
         NSLog(@"No points for you");
     }
+}
+
+-(void)showAlert:(NSString*)title withMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -171,6 +182,13 @@
     [_player setFullscreen:YES animated:NO];
     [_player play];
     [_player setControlStyle:MPMovieControlStyleFullscreen];
+}
+
+-(void)tableView:(UITableView*)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.textLabel.textColor = [UIColor colorWithWhite:1.0 alpha:1.0];
+    cell.backgroundColor = [UIColor colorWithRed:(102.0/255.0) green:(204.0/255.0) blue:(255.0/255.0) alpha:1.0];
+    cell.textLabel.font = [UIFont fontWithName:@"ArialRoundedMTBold" size:40];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

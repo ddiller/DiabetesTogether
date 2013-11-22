@@ -37,5 +37,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)backClick:(id)sender {
+        [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 
 @end

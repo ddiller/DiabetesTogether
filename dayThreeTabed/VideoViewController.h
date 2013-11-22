@@ -10,6 +10,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "VideoViewController.h"
 #import "VideoFiles.h"
+#import "PointManager.h"
 
 @interface VideoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 //@property (weak, nonatomic) IBOutlet UIButton *SecondMovie;
@@ -21,4 +22,5 @@
 @property (assign) BOOL finished;
 @property (weak, nonatomic) IBOutlet UITableView *videoTable;
 @property (strong, nonatomic) NSArray* tableData;
+@property (nonatomic) PointManager* myPoints;
 @end

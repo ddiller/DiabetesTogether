@@ -7,9 +7,10 @@
 //
 
 #import "QRViewController.h"
+#import "PointManager.h"
 
 @interface QRViewController ()
-
+@property (nonatomic)PointManager *myPoints;
 @end
 
 @implementation QRViewController
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.myPoints = [[PointManager alloc]init];
+
     _userDefaults = [NSUserDefaults standardUserDefaults];
 
     if ([self keyExists])
@@ -87,23 +90,8 @@
         break;
     
     // EXAMPLE: Do something useful with the barcode data
-//    _resultText.text = symbol.data;
     NSLog(@"%@", symbol.data);
-//
-//    
-//    if ([symbol.data rangeOfString:@"Allen Roman"].location == NSNotFound)
-//    {
-//        _key = @"Allen Roman";
-//        NSLog(@"Key was: %@", [_userDefaults objectForKey:@"Key"]);
-//        [_userDefaults setObject:_key forKey:@"Key"];
-//        NSLog(@"Key is: %@", [_userDefaults objectForKey:@"Key"]);
-//        NSLog(@"It's not here!");
-//    }
-//    
-//    else
-//    {
-//        NSLog(@"You're here!");
-//    }
+
     if ([self keyExists])
     {
         NSLog(@"QR Key is: %@", _key);
@@ -116,15 +104,33 @@
     }
     
     NSLog(@"%@", _key);
+    NSString* qrKey = _key;
     if ([symbol.data rangeOfString:_key].location == NSNotFound)
     {
-        NSLog(@"%@", [symbol.data substringToIndex:15]);
+        NSLog(@"%@", qrKey);
         NSLog(@"I see nothing here! Invalid QR code!");
     }
     else
     {
         NSLog(@"Valid code!");
     }
+    
+    NSLog(@"QRKey is: %@", qrKey);
+    if ([[NSString stringWithFormat:@"wp958bfoy2qt89n" ] rangeOfString:qrKey].location != NSNotFound)
+    {
+        NSLog(@"Adding points");
+        [self showAlert:@"Points" withMessage:@"You got points!"];
+        NSLog(@"%d", [self.myPoints getPoints]);
+
+        [self.myPoints addPointsClass];
+        NSLog(@"%d", [self.myPoints getPoints]);
+
+    }
+    else
+    {
+        [self showAlert:@"Invalid Code" withMessage:@"No points added."];
+    }
+    
     
     // EXAMPLE: Do something useful with the barcode image
 //    _resultImage.image = [info objectForKey:UIImagePickerControllerOriginalImage];
