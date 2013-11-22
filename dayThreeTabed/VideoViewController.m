@@ -21,12 +21,13 @@
     _videoTable.dataSource = self;
     _videoTable.delegate = self;
     _finished = true;
-    VideoFiles* file = [[VideoFiles alloc] initWithURL:@"Living_a_Balanced_Life_With_Diabetes-Webinar_Video " withTitle: @"Living a Balanced Life With Diabetes" asURL:FALSE];
+    VideoFiles* file = [[VideoFiles alloc] initWithURL:@"Living_a_Balanced_Life_With_Diabetes-Webinar_Video" withTitle: @"Living a Balanced Life With Diabetes" asURL:FALSE];
     VideoFiles* file1 = [[VideoFiles alloc] initWithURL: @"diabetes-travel-tips-508" withTitle: @"Diabetes travel tips." asURL:FALSE];
     VideoFiles* file2 = [[VideoFiles alloc] initWithURL:@"eating-healthy-diabetes-gatherings-508" withTitle: @"Eating healthy at gatherings." asURL:FALSE];
     VideoFiles* file3 = [[VideoFiles alloc] initWithURL:@"healthy-eating-diabetes-508" withTitle: @"Eating healthy." asURL:FALSE];
-
-    _tableData = [NSArray arrayWithObjects:file, file1, file2, file3,	 nil];
+    VideoFiles* file4 = [[VideoFiles alloc] initWithURL:@"movie" withTitle: @"Demo Video" asURL:FALSE];
+    
+    _tableData = [NSArray arrayWithObjects:file, file1, file2, file3, file4, nil];
 
 	// Do any additional setup after loading the view, typically from a nib.
 }
