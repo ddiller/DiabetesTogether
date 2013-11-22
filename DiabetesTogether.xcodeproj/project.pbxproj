@@ -38,7 +38,6 @@
 		41306176183D935E00FEE9CD /* Med-AppJam-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41306175183D935E00FEE9CD /* Med-AppJam-Logo.png */; };
 		413BEA3D1839B7BF0008AB6D /* StepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413BEA3C1839B7BF0008AB6D /* StepsViewController.m */; };
 		414019021833134900A78834 /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414019011833134900A78834 /* settingsViewController.m */; };
-		4141F4DD183ECB33008C6BD7 /* Mail-500.png in Resources */ = {isa = PBXBuildFile; fileRef = 4141F4DC183ECB33008C6BD7 /* Mail-500.png */; };
 		414AC1CB1832C6D100E566C1 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414AC1CA1832C6D100E566C1 /* QuizViewController.m */; };
 		414EC6311832D44000C4AB88 /* quizManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 414EC6301832D44000C4AB88 /* quizManager.m */; };
 		4166EC1E1836D857001621EE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4166EC1D1836D857001621EE /* FacebookSDK.framework */; };
@@ -55,6 +54,8 @@
 		4169CDED183C41A600158605 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4169CDEC183C41A600158605 /* Security.framework */; };
 		4169CDEF183C41B700158605 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4169CDEE183C41B700158605 /* CFNetwork.framework */; };
 		4169CDF2183C5A8E00158605 /* RewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4169CDF1183C5A8E00158605 /* RewardsViewController.m */; };
+		4180E68D183EE5AF0050644E /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4180E686183EE5910050644E /* libMailCore-ios.a */; };
+		419CB17C183EEA310040477A /* Mail-500.png in Resources */ = {isa = PBXBuildFile; fileRef = 419CB17B183EEA310040477A /* Mail-500.png */; };
 		41ACC265183DFCA20007F36E /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41ACC25F183DFCA20007F36E /* libzbar.a */; };
 		41ACC266183DFCA20007F36E /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC261183DFCA20007F36E /* zbar-back.png */; };
 		41ACC267183DFCA20007F36E /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC262183DFCA20007F36E /* zbar-help.html */; };
@@ -77,6 +78,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4127FB0E18303C2400704C33;
 			remoteInfo = dayThreeTabed;
+		};
+		4180E683183EE5910050644E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4180E67B183EE58F0050644E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA537169E772200778456;
+			remoteInfo = "static mailcore2 osx";
+		};
+		4180E685183EE5910050644E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4180E67B183EE58F0050644E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		4180E687183EE5910050644E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4180E67B183EE58F0050644E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA78C169F259200778456;
+			remoteInfo = tests;
+		};
+		4180E689183EE5910050644E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4180E67B183EE58F0050644E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A81B911706840C00882C15;
+			remoteInfo = "test-ios";
+		};
+		4180E68B183EE5910050644E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4180E67B183EE58F0050644E /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
+			remoteInfo = "mailcore osx";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -152,6 +188,8 @@
 		4169CDEE183C41B700158605 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4169CDF0183C5A8E00158605 /* RewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsViewController.h; sourceTree = "<group>"; };
 		4169CDF1183C5A8E00158605 /* RewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsViewController.m; sourceTree = "<group>"; };
+		4180E67B183EE58F0050644E /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "../../../../Volumes/DISK_IMG/mailcore2-master/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
+		419CB17B183EEA310040477A /* Mail-500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail-500.png"; sourceTree = "<group>"; };
 		41ACC24B183DFCA20007F36E /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
 		41ACC24C183DFCA20007F36E /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
 		41ACC24D183DFCA20007F36E /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
@@ -194,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4180E68D183EE5AF0050644E /* libMailCore-ios.a in Frameworks */,
 				41306165183D541200FEE9CD /* libiconv.dylib in Frameworks */,
 				41306163183D540B00FEE9CD /* QuartzCore.framework in Frameworks */,
 				41ACC265183DFCA20007F36E /* libzbar.a in Frameworks */,
@@ -227,6 +266,7 @@
 		4127FB0618303C2400704C33 = {
 			isa = PBXGroup;
 			children = (
+				4180E67B183EE58F0050644E /* mailcore2.xcodeproj */,
 				41ACC278183EDE520007F36E /* movie.mp4 */,
 				41ACC26E183DFDC40007F36E /* diabetes-travel-tips-508.mp4 */,
 				41ACC26F183DFDC40007F36E /* eating-healthy-diabetes-gatherings-508.mp4 */,
@@ -347,6 +387,7 @@
 		4127FB3E18303C2500704C33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				419CB17B183EEA310040477A /* Mail-500.png */,
 				4127FB3F18303C2500704C33 /* DiabetesTogetherTests-Info.plist */,
 				4127FB4018303C2500704C33 /* InfoPlist.strings */,
 			);
@@ -366,6 +407,18 @@
 				4169CD99183C2C1300158605 /* Record.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		4180E67C183EE58F0050644E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4180E684183EE5910050644E /* libMailCore.a */,
+				4180E686183EE5910050644E /* libMailCore-ios.a */,
+				4180E688183EE5910050644E /* tests */,
+				4180E68A183EE5910050644E /* test-ios.app */,
+				4180E68C183EE5910050644E /* MailCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		41ACC247183DFCA20007F36E /* ZBarSDK */ = {
@@ -498,6 +551,12 @@
 			mainGroup = 4127FB0618303C2400704C33;
 			productRefGroup = 4127FB1018303C2400704C33 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4180E67C183EE58F0050644E /* Products */;
+					ProjectRef = 4180E67B183EE58F0050644E /* mailcore2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4127FB0E18303C2400704C33 /* DiabetesTogether */,
@@ -505,6 +564,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4180E684183EE5910050644E /* libMailCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCore.a;
+			remoteRef = 4180E683183EE5910050644E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4180E686183EE5910050644E /* libMailCore-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMailCore-ios.a";
+			remoteRef = 4180E685183EE5910050644E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4180E688183EE5910050644E /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tests;
+			remoteRef = 4180E687183EE5910050644E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4180E68A183EE5910050644E /* test-ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "test-ios.app";
+			remoteRef = 4180E689183EE5910050644E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4180E68C183EE5910050644E /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = 4180E68B183EE5910050644E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4127FB0D18303C2400704C33 /* Resources */ = {
@@ -519,6 +616,7 @@
 				41ACC266183DFCA20007F36E /* zbar-back.png in Resources */,
 				41306176183D935E00FEE9CD /* Med-AppJam-Logo.png in Resources */,
 				41306170183D89F700FEE9CD /* titanium-badges-transparent.png in Resources */,
+				419CB17C183EEA310040477A /* Mail-500.png in Resources */,
 				41ACC269183DFCA20007F36E /* zbar-samples.png in Resources */,
 				41306173183D923500FEE9CD /* left-arrow-transparent.png in Resources */,
 				41ACC268183DFCA20007F36E /* zbar-helpicons.png in Resources */,
@@ -719,11 +817,18 @@
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-liconv",
+					"-ObjC",
 					"-ltidy",
 					"-lz",
 					"-lstdc++",
 					"-stdlib=libstdc++",
-					"-ObjC",
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lsasl2",
+					"-lz",
 				);
 				PRODUCT_NAME = DiabetesTogether;
 				PROVISIONING_PROFILE = "";
@@ -758,11 +863,18 @@
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-liconv",
+					"-ObjC",
 					"-ltidy",
 					"-lz",
 					"-lstdc++",
 					"-stdlib=libstdc++",
-					"-ObjC",
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lsasl2",
+					"-lz",
 				);
 				PRODUCT_NAME = DiabetesTogether;
 				PROVISIONING_PROFILE = "";

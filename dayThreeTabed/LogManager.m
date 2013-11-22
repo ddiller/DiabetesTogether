@@ -281,7 +281,7 @@
                                                 mailbox:self.email];
     
     NSString *results = [[LogManager logManager] logDataFromDate:[NSDate dateWithTimeIntervalSinceNow:-1000000]];
-    NSLog(results);
+//    NSLog(results);
     
     [[builder header] setFrom:from];
     [[builder header] setTo:@[to]];

@@ -7,7 +7,7 @@
 //
 
 #import "quizManager.h"
-const int NUMQUESTIONS = 43;
+const int NUMQUESTIONS = 40;
 
 @implementation quizManager
 -(id)init{

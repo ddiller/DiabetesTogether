@@ -209,7 +209,7 @@
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="114" id="TYG-7c-P3f">
                                         <rect key="frame" x="0.0" y="22" width="768" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TYG-7c-P3f">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TYG-7c-P3f" id="eTi-Po-yft">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -1262,6 +1262,23 @@
                                             <action selector="helpButton:" destination="N8J-wC-eAU" eventType="touchUpInside" id="5wH-eS-5uj"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0w-pm-J7L">
+                                        <rect key="frame" x="546" y="790" width="168" height="214"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Email Progress" image="Mail-500.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="click:" destination="H9Z-Zw-vaj" eventType="touchUpInside" id="vIy-Fd-AQ2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mail Records" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiK-xQ-fX4">
+                                        <rect key="frame" x="17" y="274" width="101" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <connections>
                                     <outlet property="delegate" destination="udy-lf-qMd" id="NWx-Ql-7lk"/>
@@ -1288,10 +1305,11 @@
     <resources>
         <image name="Facebook Logo" width="660" height="248"/>
         <image name="Light-500" width="500" height="500"/>
+        <image name="Mail-500.png" width="500" height="500"/>
         <image name="Med-AppJam-Logo.png" width="1000" height="1000"/>
         <image name="PointMeter" width="500" height="1000"/>
         <image name="Rewards" width="500" height="500"/>
-        <image name="RewardsPage" width="390" height="523"/>
+        <image name="RewardsPage" width="380" height="509"/>
         <image name="Start" width="502" height="497"/>
         <image name="apple-172" width="500" height="500"/>
         <image name="badge_bronze" width="1000" height="1000"/>

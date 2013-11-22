@@ -62,6 +62,9 @@
     _bspm_diastolic.text = [bspm.diastolic stringValue];
     _bspm_systolic.text = [bspm.systolic stringValue];
 }
+- (IBAction)click:(id)sender {
+    [[LogManager logManager] sendLogToEmail];
+}
 
 - (void)didReceiveMemoryWarning
 {
