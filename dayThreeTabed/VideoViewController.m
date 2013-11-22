@@ -137,6 +137,8 @@
     {
         [_player setFullscreen:NO];
         [_player stop];
+        [self showAlert:@"No points added." withMessage:@"Did not watch the movie all the way."];
+
         NSLog(@"No points for you");
     }
 }
