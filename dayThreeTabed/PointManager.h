@@ -22,5 +22,6 @@ extern const int SPENTLEVELTHREE;
 -(void)removePointsOne;
 -(void)removePointsTwo;
 -(void)removePointsThree;
+-(void)addPointsAmount:(NSInteger)amount;
 -(int)getPoints;
 @end

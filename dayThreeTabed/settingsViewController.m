@@ -9,9 +9,11 @@
 #import "settingsViewController.h"
 #import "PointManager.h"
 #import "LogManager.h"
+#import <MailCore/mailcore.h>
 
 @interface settingsViewController ()
 @property (strong, nonatomic) PointManager *myPoints;
+@property (nonatomic, weak) NSString *email;
 @end
 
 @implementation settingsViewController
@@ -48,9 +50,7 @@
 - (IBAction)removePoints:(id)sender {
     [self.myPoints removePointsTwo];
 }
-- (IBAction)emailProgressButtonClick:(id)sender {
-    NSString *results = [[LogManager logManager] logDataFromDate:[NSDate dateWithTimeIntervalSinceNow:-1000000]];
-    NSLog(results);}
+
 
 
 @end

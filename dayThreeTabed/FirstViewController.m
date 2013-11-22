@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     self.myPoints = [[PointManager alloc]init];
-    [[UITabBar appearance] setBackgroundColor:[UIColor blueColor]];
+    [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blueColor]];
     
     
