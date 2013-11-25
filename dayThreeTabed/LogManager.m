@@ -19,7 +19,7 @@
 @interface LogManager()
 
 @property (nonatomic, weak) NSManagedObjectContext* managedObjectContext;
-@property (nonatomic, weak) NSString *email;
+@property (nonatomic, strong) NSString *email;
 
 @end
 
@@ -277,10 +277,9 @@
     MCOMessageBuilder *builder = [[MCOMessageBuilder alloc] init];
     MCOAddress *from = [MCOAddress addressWithDisplayName:@"DiabetesTogether"
                                                   mailbox:@"diabetestogetheruci@gmail.com"];
-    MCOAddress *to = [MCOAddress addressWithDisplayName:nil
-                                                mailbox:self.email];
+    MCOAddress *to = [MCOAddress addressWithDisplayName:nil mailbox:self.email];
     
-    NSString *results = [[LogManager logManager] logDataFromDate:[NSDate dateWithTimeIntervalSinceNow:-1000000]];
+    NSString *results = [[LogManager logManager] logDataFromDate:[NSDate dateWithTimeIntervalSinceNow:-24*60*60*7]];
 //    NSLog(results);
     
     [[builder header] setFrom:from];
@@ -296,8 +295,50 @@
             NSLog(@"Error sending email: %@", error);
         } else {
             NSLog(@"Successfully sent email!");
+            [self showAlert:@"Email Log" withMessage:@"Successfully sent!"];
         }
     }];
+    }
+}
+
+-(void)showAlert:(NSString*)title withMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void) insertDummyValues {
+    NSArray *values = @[
+                        @[@121.39, @74.10,@121.39, @74.10, @105.43, @88.89, @98.92, @84.66, @90.20, @93.39, @50.29, @75.41, @103.04],
+                        @[@146.73, @80.70,@146.73, @80.70, @81.77, @77.30, @94.01, @80.40, @107.57, @96.38, @71.41, @89.54, @93.39],
+                        @[@139.98, @68.31,@121.39, @74.10, @88.37, @185.73, @102.67, @88.48, @80.15, @73.45, @89.18, @140.36, @75.01],
+                        @[@96.33, @88.21,@146.73, @80.70, @90.23, @75.35, @57.29, @85.09, @85.95, @60.38, @105.20, @78.73, @127.78],
+                        @[@137.26, @90.81,@121.39, @74.10, @75.13, @128.54, @108.65, @190.29, @84.42, @106.96, @98.24, @96.98, @126.54],
+                        @[@92.20, @85.14,@146.73, @80.70, @85.02, @123.58, @95.26, @121.45, @63.72, @85.79, @115.03, @160.60, @108.54],
+                        @[@139.98, @68.31,@121.39, @74.10, @88.37, @102.73, @102.67, @88.48, @80.15, @73.45, @89.18, @99.36, @75.01],
+                        @[@121.39, @74.10,@121.39, @74.10, @105.43, @88.89, @98.92, @84.66, @180.20, @93.39, @81.29, @75.41, @103.04],
+                        ];
+    int time_interval = 0;
+    
+    for (NSArray *row in values) {
+        Record *record = [self newRecordToStore];
+        record.date = [NSDate dateWithTimeIntervalSinceNow:time_interval];
+        
+        record.bsam.systolic = row[0];
+        record.bsam.diastolic = row[1];
+        record.bspm.systolic = row[2];
+        record.bspm.diastolic = row[3];
+        record.gcbreak.pre_glucose = row[4];
+        record.gcbreak.post_glucose = row[5];
+        record.gcbreak.carb_count = row[6];
+        record.gclunch.pre_glucose = row[7];
+        record.gclunch.post_glucose = row[8];
+        record.gclunch.carb_count = row[9];
+        record.gcdinner.pre_glucose = row[10];
+        record.gcdinner.post_glucose = row[11];
+        record.gcdinner.carb_count = row[12];
+        
+        time_interval -= 24*60*60;
     }
 }
 

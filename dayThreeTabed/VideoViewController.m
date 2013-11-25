@@ -128,7 +128,7 @@
         [_player setFullscreen:NO];
         [_player stop];
         NSLog(@"You get points!");
-        [self showAlert:@"Points!" withMessage:@"You got points!"];
+        [self showAlert:@"Points!" withMessage:@"You got 5 points!"];
         NSLog(@"%d", [self.myPoints getPoints]);
         [self.myPoints addPointsVideo];
         NSLog(@"%d", [self.myPoints getPoints]);
@@ -191,7 +191,7 @@
 {
     cell.textLabel.textColor = [UIColor colorWithWhite:1.0 alpha:1.0];
     cell.backgroundColor = [UIColor colorWithRed:(102.0/255.0) green:(204.0/255.0) blue:(255.0/255.0) alpha:1.0];
-    cell.textLabel.font = [UIFont fontWithName:@"ArialRoundedMTBold" size:40];
+    cell.textLabel.font = [UIFont fontWithName:@"ArialRoundedMTBold" size:20];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -206,5 +206,11 @@
     cell.textLabel.text = [[_tableData objectAtIndex:indexPath.row] getTitle];
     return cell;
 }
+
+
+- (IBAction)lightBulbClick:(id)sender {
+    [self showAlert:@"Watch Video" withMessage:@"Watch a video to enhance your knowledge of Diabetes, and earn 5 points for each video you watch.  Click on any one of video titles on this page to start watching."];
+}
+
 
 @end

@@ -62,7 +62,8 @@
     _bspm_diastolic.text = [bspm.diastolic stringValue];
     _bspm_systolic.text = [bspm.systolic stringValue];
 }
-- (IBAction)click:(id)sender {
+
+- (IBAction)mailRecordButtonClick:(id)sender {
     [[LogManager logManager] sendLogToEmail];
 }
 
@@ -99,6 +100,7 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
+    [self updateBloodPressureValues];
     activeField = nil;
 }
 
@@ -111,7 +113,7 @@
 - (void)resetScrollView {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
-    scrollView.contentSize = CGSizeMake(screenWidth, 500);
+    scrollView.contentSize = CGSizeMake(screenWidth, 480);
     scrollView.frame = screenRect;
 }
 

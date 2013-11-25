@@ -52,5 +52,8 @@
 }
 
 
+- (IBAction)initDummyClick:(id)sender {
+    [[LogManager logManager] insertDummyValues];
+}
 
 @end

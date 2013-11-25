@@ -128,7 +128,7 @@
         if(self.questionProgress == 4){
             if([[self.quizManager.answers objectAtIndex:questionNum] isEqualToString: userAnswer]){
                 [self.quizManager addPoints];
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Well Done!" message:[NSString stringWithFormat:@"good job u earned %d points", QUIZPOINTS] delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Well Done!" message:[NSString stringWithFormat:@"Great job, You earned %d points!", QUIZPOINTS] delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
                 [self dismissViewControllerAnimated:YES completion:nil];
             

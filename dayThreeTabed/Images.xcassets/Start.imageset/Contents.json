@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "start-button-transparent-1.png"
+      "filename" : "submit-button-transparent-1.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "start-button-transparent.png"
+      "filename" : "submit-button-transparent.png"
     }
   ],
   "info" : {

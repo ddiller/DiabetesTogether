@@ -122,6 +122,7 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
+    [self updateGlucoseValues];
     activeField = nil;
 }
 
@@ -142,6 +143,9 @@
                                              selector:@selector(keyboardWillBeHidden:)
                                                  name:UIKeyboardWillHideNotification object:nil];
     
+}
+- (IBAction)emailRecordButtonClick:(id)sender {
+    [[LogManager logManager] sendLogToEmail];
 }
 
 // Called when the UIKeyboardDidShowNotification is sent.

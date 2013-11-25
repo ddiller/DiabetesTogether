@@ -29,6 +29,7 @@ typedef enum {
 + (NSDate *) dateForTimeMarker:(TimeMarker)marker;
 + (LogManager *) logManager;
 - (NSString *) logDataFromDate:(NSDate *)date;
+- (void) insertDummyValues;
 - (void) saveContext;
 - (void) sendLogToEmail;
 
