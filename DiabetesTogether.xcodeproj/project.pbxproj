@@ -57,11 +57,6 @@
 		41ACC267183DFCA20007F36E /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC262183DFCA20007F36E /* zbar-help.html */; };
 		41ACC268183DFCA20007F36E /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC263183DFCA20007F36E /* zbar-helpicons.png */; };
 		41ACC269183DFCA20007F36E /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC264183DFCA20007F36E /* zbar-samples.png */; };
-		41ACC272183DFDFC0007F36E /* diabetes-travel-tips-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC26E183DFDC40007F36E /* diabetes-travel-tips-508.mp4 */; };
-		41ACC273183DFDFC0007F36E /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC26F183DFDC40007F36E /* eating-healthy-diabetes-gatherings-508.mp4 */; };
-		41ACC274183DFDFC0007F36E /* healthy-eating-diabetes-508.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC270183DFDC40007F36E /* healthy-eating-diabetes-508.mp4 */; };
-		41ACC275183DFDFC0007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC271183DFDC40007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */; };
-		41ACC279183EDEB40007F36E /* movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41ACC278183EDE520007F36E /* movie.mp4 */; };
 		41E60A6A18318A4B005F8807 /* PointManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E60A6918318A4B005F8807 /* PointManager.m */; };
 		41E812BD18373C4A0052383D /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E812BC18373C4A0052383D /* FacebookViewController.m */; };
 		41E812BF18373DB40052383D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E812BE18373DB40052383D /* Social.framework */; };
@@ -206,11 +201,6 @@
 		41ACC262183DFCA20007F36E /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		41ACC263183DFCA20007F36E /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		41ACC264183DFCA20007F36E /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
-		41ACC26E183DFDC40007F36E /* diabetes-travel-tips-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "diabetes-travel-tips-508.mp4"; sourceTree = "<group>"; };
-		41ACC26F183DFDC40007F36E /* eating-healthy-diabetes-gatherings-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "eating-healthy-diabetes-gatherings-508.mp4"; sourceTree = "<group>"; };
-		41ACC270183DFDC40007F36E /* healthy-eating-diabetes-508.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "healthy-eating-diabetes-508.mp4"; sourceTree = "<group>"; };
-		41ACC271183DFDC40007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4"; sourceTree = "<group>"; };
-		41ACC278183EDE520007F36E /* movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie.mp4; sourceTree = "<group>"; };
 		41E60A6818318A4B005F8807 /* PointManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointManager.h; sourceTree = "<group>"; };
 		41E60A6918318A4B005F8807 /* PointManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointManager.m; sourceTree = "<group>"; };
 		41E812BB18373C4A0052383D /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookViewController.h; path = ../FacebookViewController.h; sourceTree = "<group>"; };
@@ -258,11 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				4180E67B183EE58F0050644E /* mailcore2.xcodeproj */,
-				41ACC278183EDE520007F36E /* movie.mp4 */,
-				41ACC26E183DFDC40007F36E /* diabetes-travel-tips-508.mp4 */,
-				41ACC26F183DFDC40007F36E /* eating-healthy-diabetes-gatherings-508.mp4 */,
-				41ACC270183DFDC40007F36E /* healthy-eating-diabetes-508.mp4 */,
-				41ACC271183DFDC40007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 */,
 				41ACC247183DFCA20007F36E /* ZBarSDK */,
 				4127FB1818303C2400704C33 /* dayThreeTabed */,
 				4127FB3D18303C2500704C33 /* dayThreeTabedTests */,
@@ -594,11 +579,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41ACC279183EDEB40007F36E /* movie.mp4 in Resources */,
-				41ACC272183DFDFC0007F36E /* diabetes-travel-tips-508.mp4 in Resources */,
-				41ACC273183DFDFC0007F36E /* eating-healthy-diabetes-gatherings-508.mp4 in Resources */,
-				41ACC274183DFDFC0007F36E /* healthy-eating-diabetes-508.mp4 in Resources */,
-				41ACC275183DFDFC0007F36E /* Living_a_Balanced_Life_With_Diabetes-Webinar_Video.mp4 in Resources */,
 				41ACC266183DFCA20007F36E /* zbar-back.png in Resources */,
 				41306176183D935E00FEE9CD /* Med-AppJam-Logo.png in Resources */,
 				419CB17C183EEA310040477A /* Mail-500.png in Resources */,
